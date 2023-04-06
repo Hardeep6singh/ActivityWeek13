@@ -44,8 +44,12 @@ const db = settings
 // attempt to connect with DB
 mongoose
     .connect(db)
-    .then(() => console.log('MongoDB connected successfully.'))
-    .catch(err => console.log(err))
+    .then(() =>
+    app.listen(port, () => {
+        console.log("listening for requests");}
+        ) )
+    
+    .catch(err => console.log(err));
 
 // Get profile routes
 const user = require('./routes/api/user')
