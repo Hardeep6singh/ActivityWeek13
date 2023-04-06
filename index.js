@@ -35,17 +35,11 @@ app.set(
     '.hbs'
 )
 
-// get settings
-const settings = process.env.mongoDBUrl;
-
-// mongo db url
-const db = settings
-
 // attempt to connect with DB
 const connectDB = async()=>{
     try{
     const conn = await mongoose
-    .connect(db)
+    .connect(process.env.mongoDBUrl)
     }
     catch(err){
     console.log(err)
