@@ -1,0 +1,124 @@
+
+/* -------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+table,th,td
+{
+    background-color: black;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th
+{ 
+    padding: 15px;
+    font-size: large;
+    color: white
+}
+td 
+{
+    padding: 13px;
+    font-size: large;
+    color: white
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.main-content.center-content{
+    margin-top: 8%;
+}
+
+.center-content {
+    display: flex;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+}
+/* Bordered form */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  html{
+    height:100%;
+  
+  }
+  body{
+    min-height:100%;
+    display:flex;
+    flex-direction: column;
+  }
+  form {
+    border: 3px solid #f1f1f1;
+    margin-top:6%;
+    margin-left:32%;
+    height:50%;
+    width:30%;
+    background-color:lightseagreen;
+  }
+
+  /* Full-width inputs */
+  input[type=text]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+    
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 13px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 28%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
+  main img{
+    height: 100%;
+    width: 100%;
+  }
+  
+
+
+  

@@ -1,0 +1,16 @@
+
+<div class="main-content center-content">
+     <table>
+        <tr>
+            <th>Usernames</th>
+        </tr>
+            {{#if data}}
+                {{#each data}}
+                <tr>
+                <td>{{this.username}}</td>
+                </tr>        
+                {{/each}}
+            {{/if}}
+    
+</table>
+</div>
