@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const Handlebars = require('handlebars')
 const exphbs = require('express-handlebars')
 var path = require('path');
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8000
 
 
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
@@ -42,14 +42,17 @@ const settings = process.env.mongoDBUrl;
 const db = settings
 
 // attempt to connect with DB
-mongoose
+const connectDB = async()=>{
+    try{
+    const conn = await mongoose
     .connect(db)
-    .then(() =>
-    app.listen(port, () => {
-        console.log("listening for requests");}
-        ) )
-    
-    .catch(err => console.log(err));
+    }
+    catch(err){
+    console.log(err)
+    }
+}
+ 
+
 
 // Get profile routes
 const user = require('./routes/api/user')
@@ -60,3 +63,9 @@ app.get('/', (req, res) => {
 
 // actual routes
 app.use('/api/user', user)
+
+connectDB().then(()=>{
+    app.listen(port, () => {
+        console.log("listening for requests");}
+        )
+})
