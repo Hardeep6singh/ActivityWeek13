@@ -3,19 +3,6 @@ const router = express.Router()
 
 // Import User schema
 const User = require('../../models/User')
-console.log(typeof(User))
-
-//@type     -   GET
-//@route    -   /api/profile
-//@desc     -   Just for testing
-//@access   -   PUBLIC
-router.get('/', (req, res) => res.send('User related routes'))
-
-
-router.get('/form',(req,res)=>{
-    res.render('form')
-    })
-
 
 
 //@type     -   GET

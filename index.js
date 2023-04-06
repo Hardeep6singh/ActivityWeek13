@@ -51,7 +51,7 @@ mongoose
 const user = require('./routes/api/user')
 
 app.get('/', (req, res) => {
-    res.send('Project is Running')
+    res.render('form')
 })
 
 // actual routes
