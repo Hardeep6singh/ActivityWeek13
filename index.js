@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const Handlebars = require('handlebars')
 const exphbs = require('express-handlebars')
 var path = require('path');
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8080
 
 
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
@@ -60,5 +60,3 @@ app.get('/', (req, res) => {
 
 // actual routes
 app.use('/api/user', user)
-
-app.listen(port, () => console.log(`App running at port : ${port}`))
